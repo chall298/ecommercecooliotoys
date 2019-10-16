@@ -11,7 +11,7 @@ export class Home extends React.Component {
 			<React.Fragment>
 				<div className="jumbotron mt-5 pb-0 jumbotron-fluid">
 					<div className="nav justify-content-center">
-						<h1 className="display-4">COOLIO TOYS</h1>
+						<h1 className="display-4">COOLIO-TOYS</h1>
 					</div>
 				</div>
 				<h1 />
