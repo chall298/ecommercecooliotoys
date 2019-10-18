@@ -13,7 +13,7 @@ export class Cart extends React.Component {
 				<div className="card shopping-cart">
 					<div className="card-header bg-dark text-light">
 						<i className="fa fa-shopping-cart" aria-hidden="true" />
-						<a>Shopping cart</a>
+						<a>Shopping-cart</a>
 						{/*<a href="" className="btn btn-outline-info btn-sm pull-right">
 							Continue shopping
 						</a>*/}
