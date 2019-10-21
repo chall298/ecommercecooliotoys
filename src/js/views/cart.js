@@ -109,22 +109,11 @@ export class Cart extends React.Component {
 
 						<hr />
 
-						<div className="pull-right">
-							{/*<a href="" className="btn btn-outline-secondary pull-right">
-								Update shopping cart
-							</a>*/}
-						</div>
+						<div className="pull-right" />
 					</div>
 					<div className="card-footer">
 						<div className="coupon col-md-5 col-sm-5 no-padding-left pull-left">
-							<div className="row">
-								{/*<div className="col-6">
-									<input type="text" className="form-control" placeholder="cupone code" />
-								</div>
-								<div className="col-6">
-									<input type="submit" className="btn btn-default" value="Use cupone" />
-								</div>*/}
-							</div>
+							<div className="row" />
 						</div>
 						<div className="pull-right" style={{ margin: 10 }}>
 							<Link to="checkoutform">
@@ -155,10 +144,3 @@ export class Cart extends React.Component {
 		);
 	}
 }
-
-// Cart.propTypes = {
-// 	id: PropTypes.string,
-// 	quantity: PropTypes.number,
-// 	history: PropTypes.object,
-// 	index: PropTypes.number
-// };
