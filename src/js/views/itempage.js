@@ -38,13 +38,11 @@ export class Itempage extends React.Component {
 										<h3 className="my-3">Product Details</h3>
 										<ul>
 											<li>Age group: {list[0].productAgeRange}</li>
-											{/*<li>Weight: {list[0].weight}</li>*/}
+
 											<li>Price: ${list[0].productPrice}</li>
 										</ul>
 									</div>
 								</div>
-
-								{/*<h3 className="my-4">Related Products</h3>*/}
 
 								<div className="row" />
 							</div>
