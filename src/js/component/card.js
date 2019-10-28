@@ -10,7 +10,7 @@ export const Card = props => {
 			{({ actions }) => {
 				return (
 					<React.Fragment>
-						<div className="card" style={{ width: 350 }}>
+						<div className="card border border-primary" style={{ width: 350 }}>
 							<img className="card-img-top" src={props.image} alt="Card image cap" />
 
 							<div className="card-body">
