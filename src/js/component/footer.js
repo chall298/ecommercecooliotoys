@@ -7,26 +7,26 @@ export const Footer = () => (
 		<div className="card-body">
 			<div className="row">
 				<div className="col">
-					<button type="button" className="btn btn-primary">
+					<button type="button" className="btn btn-primary border border-dark">
 						<i className="fab fa-facebook" />
 						Facebook
 					</button>
 				</div>
 				<div className="col">
-					<button type="button" className="btn btn-danger">
+					<button type="button" className="btn btn-danger border border-dark">
 						<i className="fab fa-instagram" />
 						Instagram
 					</button>
 				</div>
 				<div className="col">
-					<button type="button" className="btn btn-primary">
+					<button type="button" className="btn btn-primary border border-dark">
 						<i className="fab fa-twitter" />
 						Twitter
 					</button>
 				</div>
 				<div className="col">
 					<Link to="/returnpolicy">
-						<button type="button" className="btn btn-warning">
+						<button type="button" className="btn btn-warning border border-dark">
 							Return Policy
 						</button>
 					</Link>
