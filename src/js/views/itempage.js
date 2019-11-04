@@ -26,7 +26,7 @@ export class Itempage extends React.Component {
 								<div className="row">
 									<div className="col-md-8">
 										<img
-											className="rounded img-fluid"
+											className="border border-primary rounded img-fluid"
 											src={list[0].photo && list[0].photo[0].PictureURL}
 											alt=""
 										/>
