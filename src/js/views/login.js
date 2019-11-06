@@ -36,6 +36,7 @@ export class Login extends React.Component {
 										required=""
 										autoFocus=""
 									/>
+									<br />
 									<label htmlFor="inputPassword" className="sr-only">
 										username
 									</label>
@@ -48,9 +49,9 @@ export class Login extends React.Component {
 										required=""
 									/>
 									<div className="checkbox mb-3">
-										<label>
+										{/*<label>
 											<input type="checkbox" value="remember-me" /> Remember me
-										</label>
+										</label>*/}
 									</div>
 									<button
 										onClick={() => actions.authenticateLogin(this.state.email, this.state.username)}
