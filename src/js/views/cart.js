@@ -27,7 +27,7 @@ export class Cart extends React.Component {
 										<div className="row" key={index}>
 											<div className="col-12 col-sm-12 col-md-2 text-center">
 												<img
-													className="img-responsive"
+													className="img-responsive border border-primary"
 													src={elem.photo[0].PictureURL}
 													alt="prewiew"
 													width="120"
