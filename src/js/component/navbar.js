@@ -40,7 +40,7 @@ export class Navbar extends React.Component {
 								</button>
 								<div className="collapse navbar-collapse" id="navbarTogglerDemo01">
 									<Link to="/">
-										<a className="navbar-brand" href="#">
+										<a className="navbar-brand border border-primary" href="#">
 											COOLIO TOYS
 										</a>
 									</Link>
