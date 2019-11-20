@@ -137,7 +137,7 @@ export class Createaccount extends React.Component {
 										)
 									}
 									type="button"
-									className="btn btn-primary">
+									className="border border-dark btn btn-primary">
 									Create account
 								</button>
 							</div>
