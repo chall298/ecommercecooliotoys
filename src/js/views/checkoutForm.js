@@ -274,7 +274,7 @@ export class CheckoutForm extends React.Component {
 							</div>
 
 							<hr className="mb-4" />
-							<button className="btn btn-primary btn-lg btn-block" type="submit">
+							<button className="border border-dark btn btn-primary btn-lg btn-block" type="submit">
 								Finalize Purchase
 							</button>
 						</form>
