@@ -55,12 +55,14 @@ export class Login extends React.Component {
 									</div>
 									<button
 										onClick={() => actions.authenticateLogin(this.state.email, this.state.username)}
-										className="btn btn-lg btn-primary btn-block"
+										className="border border-dark btn btn-lg btn-primary btn-block"
 										type="submit">
 										Sign in
 									</button>
 									<Link to="createaccount">
-										<button className="btn btn-lg btn-primary btn-block" type="button">
+										<button
+											className="border border-dark btn btn-lg btn-primary btn-block"
+											type="button">
 											Create Account
 										</button>
 									</Link>
