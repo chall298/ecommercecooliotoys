@@ -29,7 +29,7 @@ export const Card = props => {
 								<div className="justify-content-center">
 									<Link
 										to="#"
-										className="btn btn-primary"
+										className="border border-dark btn btn-primary"
 										onClick={e => {
 											e.preventDefault();
 											actions.addToCart(props.cricket);
