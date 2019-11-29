@@ -20,7 +20,11 @@ export class Itempage extends React.Component {
 						<div>
 							<div className="container">
 								<h1 className="my-4">
-									<small>{list[0].ProductName}</small>
+									<small>
+										<p>
+											<u>{list[0].ProductName}</u>
+										</p>
+									</small>
 								</h1>
 
 								<div className="row">
