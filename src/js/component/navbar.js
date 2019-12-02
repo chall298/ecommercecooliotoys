@@ -84,7 +84,7 @@ export class Navbar extends React.Component {
 												<Link to="/cart">
 													<a className="nav-link" href="#">
 														<i className="fas fa-shopping-cart" />
-														<span className="badge badge-success ml-2">
+														<span className="badge badge-primary ml-2">
 															{store.cart.length}
 														</span>
 													</a>
