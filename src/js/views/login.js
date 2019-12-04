@@ -22,7 +22,11 @@ export class Login extends React.Component {
 								<div
 									className="form-signin"
 									style={{ width: "100%", maxWidth: "330px", padding: "15px", margin: " auto" }}>
-									<h1 className="h3 mb-3 font-weight-normal">COOLIO-TOYS</h1>
+									<p>
+										<u>
+											<h1 className="h3 mb-3 font-weight-normal">COOLIO-TOYS</h1>
+										</u>
+									</p>
 									<h1 className="h3 mb-3 font-weight-normal">Please sign in</h1>
 									<label htmlFor="inputEmail" className="sr-only">
 										Email address
