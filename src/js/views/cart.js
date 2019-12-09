@@ -131,7 +131,12 @@ export class Cart extends React.Component {
 										});
 										return (
 											<div className="pull-right margin-5">
-												Total price: <b>${cartTotal}</b>
+												Total price:{" "}
+												<p>
+													<u>
+														<b>${cartTotal}</b>
+													</u>
+												</p>
 											</div>
 										);
 									}}
