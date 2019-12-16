@@ -20,7 +20,9 @@ export class Createaccount extends React.Component {
 					return (
 						<div>
 							<h1 className="mx-auto" style={{ width: "200px" }}>
-								Create account
+								<p>
+									<u>Create account</u>
+								</p>
 							</h1>
 							<div className="container">
 								<div className="form-row">
