@@ -9,9 +9,11 @@ export class Home extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<div className="jumbotron mt-5 pb-0 jumbotron-fluid">
-					<div className="nav justify-content-center">
-						<h1 className="display-4">COOLIO-TOYS</h1>
+				<div className="jumbotron-fluid jumbotron">
+					<div className="row text-center">
+						<div className="col align-self-center">
+							<h1 className="display-4">COOLIO-TOYS</h1>
+						</div>
 					</div>
 				</div>
 				<h1 />
