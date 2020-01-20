@@ -5,10 +5,12 @@ import rigoImage from "../../img/rigo-baby.jpg";
 import "../../styles/home.scss";
 import { Footer } from "../component/footer";
 import { Context } from "../store/appContext.js";
+import { Navbar_old } from "../component/navbar_old";
 export class Home extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
+				<Navbar_old />
 				<div className="jumbotron-fluid jumbotron">
 					<div className="row text-center">
 						<div className="col align-self-center">

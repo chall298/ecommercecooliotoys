@@ -4,14 +4,24 @@ import { Link } from "react-router-dom";
 export class Navbar_old extends React.Component {
 	render() {
 		return (
-			<nav className="navbar navbar-light bg-light mb-3">
-				<Link to="/">
-					<span className="navbar-brand mb-0 h1">React Boilerplate</span>
-				</Link>
-				<div className="ml-auto">
-					<Link to="/demo">
-						<button className="btn btn-primary">Check the Context in action</button>
-					</Link>
+			<nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+				<a className="navbar-brand" href="#">
+					COOLIO-TOYS
+				</a>
+				<button
+					className="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation">
+					<span className="navbar-toggler-icon" />
+				</button>
+
+				<div className="topnav-right">
+					<a href="#search">Search</a>
+					<a href="#about">About</a>
 				</div>
 			</nav>
 		);
