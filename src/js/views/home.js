@@ -10,7 +10,6 @@ export class Home extends React.Component {
 	render() {
 		return (
 			<React.Fragment>
-				<Navbar_old />
 				<div className="jumbotron-fluid jumbotron">
 					<div className="row text-center">
 						<div className="col align-self-center">
