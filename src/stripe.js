@@ -1,4 +1,4 @@
-const stripe = require('stripe')(<your_secret_key>)
+const stripe = require('stripe')(sk_test_Nt7ow36H5eSXPKDxeiUE6kOA00YI15QkRh)
 
 async function postCharge(req, res) {
   try {
