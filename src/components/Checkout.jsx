@@ -8,7 +8,7 @@ const Checkout = ({ selectedProduct, history }) => {
   }, [])
 
   return (
-    <StripeProvider apiKey="pk_test_UrBUzJWPNse3I03Bsaxh6WFX00r6rJ1YCq">
+    <StripeProvider apiKey="pk_test_jfIXB2x3wZmYD65Di6Er0Mqk00N38pV3DG">
       <Elements>
         <CheckoutForm selectedProduct={selectedProduct} history={history} />
       </Elements>
