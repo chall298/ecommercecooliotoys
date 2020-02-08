@@ -9,52 +9,6 @@ export class Cart extends React.Component {
 		super(props);
 	}
 
-	componentDidMount() {
-		paypal.Button.render(
-			{
-				// Configure environment
-				env: "sandbox",
-				client: {
-					sandbox: "demo_sandbox_client_id",
-					production: "demo_production_client_id"
-				},
-				// Customize button (optional)
-				locale: "en_US",
-				style: {
-					size: "small",
-					color: "gold",
-					shape: "pill"
-				},
-
-				// Enable Pay Now checkout flow (optional)
-				commit: true,
-
-				// Set up a payment
-				payment: function(data, actions) {
-					return actions.payment.create({
-						transactions: [
-							{
-								amount: {
-									total: "0.01",
-									currency: "USD"
-								}
-							}
-						]
-					});
-				},
-				// Execute the payment
-				onAuthorize: function(data, actions) {
-					return actions.payment.execute().then(function() {
-						// Show a confirmation message to the buyer
-						setSuccess(true);
-						window.alert("Thank you for your purchase!");
-					});
-				}
-			},
-			"#paypal-button"
-		);
-	}
-
 	render() {
 		return (
 			<div className="container">
@@ -169,7 +123,6 @@ export class Cart extends React.Component {
 							{/* <a href="" className="btn btn-success pull-right">
 								Checkout
 							</a> */}
-							<PaypallButton />
 							{/* </Link> */}
 							<div className="pull-right" style={{ margin: 5 }}>
 								<Context.Consumer>
@@ -189,6 +142,7 @@ export class Cart extends React.Component {
 														<b>${cartTotal}</b>
 													</u>
 												</p>
+												{cartTotal && cartTotal > 0 && <PaypallButton total={cartTotal} />}
 											</div>
 										);
 									}}
