@@ -3,10 +3,58 @@ import { Context } from "../store/appContext.js";
 // import { CartItem } from "../component/cartItem";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
+import { PaypallButton } from "../component/PaypallButton";
 export class Cart extends React.Component {
 	constructor(props) {
 		super(props);
 	}
+
+	componentDidMount() {
+		paypal.Button.render(
+			{
+				// Configure environment
+				env: "sandbox",
+				client: {
+					sandbox: "demo_sandbox_client_id",
+					production: "demo_production_client_id"
+				},
+				// Customize button (optional)
+				locale: "en_US",
+				style: {
+					size: "small",
+					color: "gold",
+					shape: "pill"
+				},
+
+				// Enable Pay Now checkout flow (optional)
+				commit: true,
+
+				// Set up a payment
+				payment: function(data, actions) {
+					return actions.payment.create({
+						transactions: [
+							{
+								amount: {
+									total: "0.01",
+									currency: "USD"
+								}
+							}
+						]
+					});
+				},
+				// Execute the payment
+				onAuthorize: function(data, actions) {
+					return actions.payment.execute().then(function() {
+						// Show a confirmation message to the buyer
+						setSuccess(true);
+						window.alert("Thank you for your purchase!");
+					});
+				}
+			},
+			"#paypal-button"
+		);
+	}
+
 	render() {
 		return (
 			<div className="container">
@@ -116,11 +164,13 @@ export class Cart extends React.Component {
 							<div className="row" />
 						</div>
 						<div className="pull-right" style={{ margin: 10 }}>
-							<Link to="checkoutform">
-								<a href="" className="btn btn-success pull-right">
-									Checkout
-								</a>
-							</Link>
+							{/* <Link to="checkoutform"> */}
+
+							{/* <a href="" className="btn btn-success pull-right">
+								Checkout
+							</a> */}
+							<PaypallButton />
+							{/* </Link> */}
 							<div className="pull-right" style={{ margin: 5 }}>
 								<Context.Consumer>
 									{({ store }) => {
