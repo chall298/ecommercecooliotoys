@@ -1,3 +1,5 @@
+This is an ecommerce store that was made with javascript and react for the front end, and python and flask for the back end 
+
 See the Project here ----------> https://chall298.github.io/ecommercecooliotoys/
 
 # WebApp boilerplate with React and Cloud 9
